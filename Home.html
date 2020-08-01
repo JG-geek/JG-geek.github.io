@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Home</title>
+        <link rel="stylesheet" href="CSS/Home.css">
     </head>
     <body>
-        <header>
-            <h1>Need For Speed Most Wanted</h1>
-        </header>
-        <nav>
-            <a href="Home.html">Home</a>
+        <div class="home-class">
+            <center style="padding-top:0%"><img src="assets/jay.png" width="300px" height="100px" ></center>
+        <nav class="navbar">
+            <a class="active" href="Home.html">Home</a>
             <a href="Discussion.html">Discussions</a>
             <a href="">Screenshots</a>
             <a href="">Videos</a>
@@ -16,18 +16,20 @@
             <a href="review.html">Reviews</a>
             <a href="">Log out</a>
         </nav>
-        <h2>Most popular content from past week</h2><br>
-        <section>
-            <div>
+        <div class="abc">
+        <center><p>Most popular content from past week</p></center>
+        <hr>
+        </div>
+        <div class="discussion">
             <h3>top Discussions</h3>
-            <article class="art1">
+            <article class="art">
                <h4>1. <a href="#">increase infractions</h4></a>
                 <p>infractions are milestones you need to achieve to compete any blacklist racer.<br>
                     maximum no. of infractions are 7. you can achieve them by increasing car speed,<br>
                     hitting other vehicles. sometimes its tough...
                 </p>
             </article>
-            <article class="art2">
+            <article class="art">
                 <h4>2. <a href="#">Select a good car</h4></a>
                 <p>
                     There are lots of good cars in the game. But you have to select one according to<br>
@@ -35,20 +37,30 @@
                     got pink slip in 6th then no need to buy another car especially gallardo beacuse...
                 </p>
             </article>
-            </div>
-        </section>
+        </div>
         <section>
-            <div>
+            <div class="screenshots">
                 <h3>Top Screenshots</h3>
-                <article class="pic1">
-                    <h4>1. <a href="#">Ford Mustang: Bounty</h4></a>
-                    <img src="mustang.jpg" width="300" height="150">
-                </article>
-                <article class="pic2">
-                    <h4>2. <a href="#">Rammed police vehicle</h4></a>
-                    <img src="pursuit.jpg" width="300" height="150">
-                </article>
+                <table>
+                    <tr>
+                        <td>
+                            <h4>1. <a href="#">Ford Mustang: Bounty</h4></a>
+                        </td>
+                        <td>
+                            <h4>2. <a href="#">Rammed police vehicle</h4></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/mustang.jpg" width="300" height="150">
+                        </td>
+                        <td>
+                            <img src="assets/pursuit.jpg" width="300" height="150">
+                        </td>
+                    </tr>
+                </table>
             </div>
         </section>
+        </div>
     </body>
 </html>
