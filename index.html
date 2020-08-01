@@ -2,32 +2,36 @@
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
     <body>
-        <center>
-        <div class="image">
-            <img src="game.jpg" width="600" height="300">
+        <div class="bg-image"></div>
+        <div class="loginform">
+        <form name="login" method="GET" action="#">
+            <div class="loginform-title">
+               <h2>Log in to NEED FOR SPEED forum</h2><br>
+            </div>
+            <div class="form-input">
+                <input class="input100" type="text" name="username" placeholder="username"/><br>
+                <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+            <br>
+            <div class="form-input">
+                <input class="input100" type="password" name="password" placeholder="password"/><br>
+                <span class="focus-input100" data-placeholder="&#xf191;"></span>
+            </div>
+            <br>
+            <br>
+            <div class="form-input">
+                <input class="input100" type="submit" name="login" value="login"/>
+            </div>
+            <div class="text">
+            <a href="#">Forgot Password?</a><br>
+            Go to <a href="Home.html">Home</a> page
+            </div>
+        </form>
         </div>
         
-        <form name="login" method="GET" action="#">
-           
-            <div>
-               <h2>Log in to NFS forum</h2><br>
-            </div>
-            <div>
-                username: <input type="text" name="username" placeholder="username"/><br>
-            </div>
-            <br>
-            <br>
-            <div>
-                Password: <input type="password" name="password" placeholder="password"/><br>
-            </div>
-            <br>
-            <br>
-            <input type="submit" name="login" value="login"/>
-        </form>
-        <a href="#">Forgot Password</a><br>
-        Go to <a href="Home.html">Home</a> page
-        </center>
+       
     </body>
 </html>

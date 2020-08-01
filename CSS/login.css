@@ -1,0 +1,87 @@
+/* LOGIN FORM */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif,;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+.bg-image {
+     /* The image used */
+  background-image: url("../assets/nfs.jpeg");
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+.loginform {
+    width: 100%;  
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transform: translate(0%, -100%);
+    position: absolute;
+    z-index: 1;
+     
+  }
+  @font-face{
+      font-family: nfsfont;
+      src: url(NFS_by_JLTV.ttf);
+  }
+  .loginform-title {
+    font-family: nfsfont;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  
+    display: block;
+  }
+  .form-input {
+      width: 100%;
+      position: relative;
+      border-bottom: 2px solid rgba(255,255,255,0.24);
+      margin-bottom: 30px;
+  }
+  .input100 {
+      font-family: nfsfont;
+      width: 100%;
+      font-size: 16px;
+      color: #fff;
+      line-height: 1.2;
+      position: relative;
+      height: 45px;
+      display: block;
+      background: transparent;
+      padding: 0 5px 0 5px;
+
+  }
+  .focus-input100 {
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+ 
+.text {
+    font-size: 15px;
+  color: #e5e5e5;
+  line-height: 2;
+}
