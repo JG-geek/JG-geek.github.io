@@ -49,6 +49,9 @@ body, html {
     font-size: medium;
     color: lightblue;
 }
+#discussions {
+  padding-right: 400vh;
+}
 .topics {
     background:cornflowerblue;
 } 
@@ -58,7 +61,7 @@ body, html {
   }
 .page-nav {
     display: inline-block;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 .page-nav a {
@@ -75,3 +78,8 @@ body, html {
   .page-nav  a:hover:not(.active) {
       background-color: grey;
     }
+
+#search-bar {
+  display: block;
+  align-content: flex-start ;
+}

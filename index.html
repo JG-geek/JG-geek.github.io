@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="CSS/login.css">
+        <script defer src="JS/login-page.js"></script>
     </head>
     <body>
-        <div class="bg-image"></div>
+        <div id="bg-image"></div>
         <div class="loginform">
-        <form name="login" method="GET" action="#">
+        <form name="login" id="login-form" method="GET" action="#">
             <div class="loginform-title">
                <h2>Log in to NEED FOR SPEED forum</h2><br>
             </div>
@@ -23,7 +24,7 @@
             <br>
             <br>
             <div class="form-input">
-                <input class="input100" type="submit" name="login" value="login"/>
+                <input class="input100" id="login-form-submit" type="submit" name="login" value="login"/>
             </div>
             <div class="text">
             <a href="#">Forgot Password?</a><br>
