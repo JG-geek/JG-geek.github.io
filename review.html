@@ -2,35 +2,47 @@
 <html>
     <head>
         <title>Review</title>
+        <link rel="stylesheet" href="CSS/review.css">
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="JS/popper.min.js"></script>
+        <script src="JS/jquery.min.js"></script>
+        <script src="JS/jquery-3.5.1.slim.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
     </head>
     <body>
-        <header>
-            <h1>Need For Speed Most Wanted</h1>
-        </header>
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="Discussion.html">Discussions</a>
-            <a href="">Screenshots</a>
-            <a href="">Videos</a>
-            <a href="">Tutorials</a>
-            <a href="review.html">Reviews</a>
-            <a href="">Log out</a>
+        <div class="review-class">
+            <center style="padding-top:0%"><img src="assets/jay.png" width="300px" height="100px" ></center>
+        <nav class="nav nav-tabs">
+            <a class="nav-link" href="Home.html">Home</a>
+            <a class="nav-link" href="Discussion.html">Discussions</a>
+            <a class="nav-link" href="">Screenshots</a>
+            <a class="nav-link" href="">Videos</a>
+            <a class="nav-link" href="">Tutorials</a>
+            <a class="nav-link active" href="review.html">Reviews</a>
+            <a class="nav-link" href="">Log out</a>
         </nav>
-        <section>
-        <div>
+        <br><br>
+        <section class="row">
+        <div class="col">
             <h4>Write a review about the game</h4>
             <form name="game" action="#" method="GET">
                 <textarea id="game review" rows="4" cols="50" placeholder="write here..."></textarea><br>
-                <input type="submit" name="" value="post review"/>
+                <input type="submit" name="" value="post review" data-toggle="tooltip" title="post a review about game"/>
             </form>
         </div>
-        <div>
+        <div class="col">
             <h4>write a review about the forum</h4>
             <form name="forum" action="#" method="GET">
                 <textarea id="forum review" rows="4" cols="50" placeholder="write here..."></textarea><br>
-                <input type="submit" name="" value="post review"/>
+                <input type="submit" name="" value="post review" data-toggle="tooltip" title="post a review about forum"/>
             </form>
         </div>
         </section>
+        </div>
     </body>
 </html>

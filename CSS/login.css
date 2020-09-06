@@ -43,8 +43,8 @@ body, html {
   }
   .loginform-title {
     font-family: nfsfont;
+    color: black;
     font-size: 15px;
-    color: #fff;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
