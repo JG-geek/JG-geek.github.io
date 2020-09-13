@@ -1,0 +1,21 @@
+body {
+    background-image: url("../assets/nfs.jpeg");
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  @font-face{
+    font-family: nfsfont;
+    src: url(NFS_by_JLTV.ttf);
+  }
+  a{
+      font-family: nfsfont;
+      color: black;
+      font-size: medium;
+  }
