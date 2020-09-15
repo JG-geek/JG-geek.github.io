@@ -9,6 +9,14 @@
         <script src="JS/jquery.min.js"></script>
         <script src="JS/jquery-3.5.1.slim.min.js"></script>
         <link rel="stylesheet" href="CSS/discussion.css">
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $(".col-sm-9").append("<article><h4>best cars of nfs<a>↵</h4></a><p>uploaded by GJ03 now</p></article>");
+                    $("article").addClass("topics");
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="dis-class">
@@ -22,39 +30,39 @@
             <a class="nav-link" href="review.html">Reviews</a>
             <a class="nav-link" href="">Log out</a>
         </nav>
-        <hr>
         <div class="abc">
            <center><p>showing page1 of all topics</p></center>
         </div>
         <section class="row">
             <div id="dicsussions" class="col-sm-9">
                 <article class="topics">
-                    <h4>1.  Release notes of june update<a href="#">↵</h4></a>
+                    <h4>Release notes of june update<a href="#">↵</h4></a>
                     <p style="color: gray;">uploaded by DK 10 days ago</p>
                 </article>
                 <article class="topics">
-                    <h4>2.  Release notes of june update<a href="#">↵</h4></a>
+                    <h4>Release notes of june update<a href="#">↵</h4></a>
                     <p style="color: gray;">uploaded by DK 10 days ago</p>
                 </article>
                 <article class="topics">
-                    <h4>3.  Release notes of june update<a href="#">↵</h4></a>
+                    <h4>Release notes of june update<a href="#">↵</h4></a>
                     <p style="color: gray;">uploaded by DK 10 days ago</p>
                 </article>
                 <article class="topics">
-                    <h4>4.  Release notes of june update<a href="#">↵</h4></a>
+                    <h4>Release notes of june update<a href="#">↵</h4></a>
                     <p style="color: gray;">uploaded by DK 10 days ago</p>
                 </article>
                 <article class="topics">
-                    <h4>5.  Release notes of june update<a href="#">↵</h4></a>
-                    <p style="color: gray;">uploaded by DK 10 days ago</p>
-                </article>
-                <article class="topics">
-                    <h4>6.  Release notes of june update<a href="#">↵</h4></a>
+                    <h4>Release notes of june update<a href="#">↵</h4></a>
                     <p style="color: gray;">uploaded by DK 10 days ago</p>
                 </article>
             </div>
             <div class="abc col-sm-3">
-               <input id="search-bar"style="padding-right: 100px; " type="text" placeholder="search by topic-name"/> 
+               <input id="search-bar"style="padding-right: 100px; " type="text" placeholder="search by topic-name"/> <br>
+               <h5>Append new topic</h5>
+               <div class="add-element">
+                <input id="topic-name" type="text" placeholder="write topic name" style="padding-right: 100px;"/><br>
+                <button id="btn1">append</button>
+                </div>
             </div>
         </section>
             <div class="page-nav">

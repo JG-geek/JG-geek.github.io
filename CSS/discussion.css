@@ -64,9 +64,14 @@ hr {
 .topics {
     background:cornflowerblue;
 } 
-  .topics > h3, p {
+  .topics > h3{
     margin: 10px;
     font-size: 90%;
+  }
+  .topics > p{
+    margin: 10px;
+    font-size: 90%;
+    color: gray;
   }
 .page-nav {
     display: inline-block;
